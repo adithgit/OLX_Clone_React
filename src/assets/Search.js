@@ -1,6 +1,8 @@
-import React from 'react'
+import React,{useState} from 'react'
+
 
 export default function Search(props) {
+  const [state,setState] = useState(null)
     return( <svg
         width="25px"
         height="25px"

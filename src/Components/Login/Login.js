@@ -1,7 +1,6 @@
-import React ,{useContext, useState} from 'react';
+import React ,{ useState} from 'react';
 import Logo from '../../olx-logo.png';
 import './Login.css';
-import {firebaseContext} from '../../store/context'
 import { getAuth, signInWithEmailAndPassword } from "firebase/auth";
 import { useHistory } from 'react-router';
 
@@ -63,7 +62,9 @@ function Login() {
           <br />
           <button>Login</button>
         </form>
-        <a>Signup</a>
+        <a onClick = {()=>{
+          history.push('/signup')
+        }}>Signup</a>
       </div>
     </div>
   );
